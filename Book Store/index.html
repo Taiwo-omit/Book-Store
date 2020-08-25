@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="favicon.jpg" rel="icon">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#000">
+  <meta name="description" content="eBook">
+</head>
+
+<body>
+ <main id="root">
+  <section class="container">
+   <header class="header">
+    <div class="mynav">
+   <h1>My e-Book Library</h1>
+     <nav class="breadcrumb">
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a class="bookLink" href="/bookcase">Bookcase (0)</a>
+    </nav>
+     <nav class="login">
+    <button type="button" class="btn btn-primary btn-sm login-button">Log In</button>
+   </nav> 
+     </div>
+    </header>
+
+    <header class="searchBar">
+     <form>
+      <input type="text" placeholder="Enter… " name="search" value="">
+      <input type="submit" value="Find">
+
+     </form>
+    </header>
+
+ <section class="list">
+  <div>
+   <h2>Suggested Reading</h2>
+   <div class="book"><img src="queenie.jpg" alt="Queenie">
+   <article>
+     <h2 title="Queenie">Queenie</h2>
+      <p class="author">by Candice Carty-Williams</p>
+      <p class="price">£0.99</p>
+      <summary class="description">THE SUNDAY TIMES BESTSELLER SHORTLISTED FOR THE COSTA FIRST NOVEL AWARD LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 'Hilarious, compelling, painful, enlightening, honest. I loved it! - Dolly Alderton 'Brilliant, timely, funny, heartbreaking' - Jojo Moyes 'A deliciously funy, characterful, topical ...</summary>
+    </article>
+    <div class="book"><img src="ghana must go.jpg" alt="Ghana Must Go">
+        <article>
+          <h2 title="Ghana Must Go">Ghana Must Go</h2>
+           <p class="author">by Taiye Selasi</p>
+           <p class="price">£2.99</p>
+           <summary class="description">THE SUNDAY TIMES BESTSELLER SHORTLISTED FOR THE COSTA FIRST NOVEL AWARD LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 'Hilarious, compelling, painful, enlightening, honest. I loved it! - Dolly Alderton 'Brilliant, timely, funny, heartbreaking' - Jojo Moyes 'A deliciously funy, characterful, topical ...</summary>
+         </article>
+         <div class="book"><img src="The Girl Who Smiled Beads.jpg" alt="The Girl Who Smiled Beads">
+            <article>
+              <h2 title="Ghana Must Go">The Girl Who Smiled Beads</h2>
+               <p class="author">by Clementine Wamariya</p>
+               <p class="price">£3.99</p>
+               <summary class="description">THE SUNDAY TIMES BESTSELLER SHORTLISTED FOR THE COSTA FIRST NOVEL AWARD LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 'Hilarious, compelling, painful, enlightening, honest. I loved it! - Dolly Alderton 'Brilliant, timely, funny, heartbreaking' - Jojo Moyes 'A deliciously funy, characterful, topical ...</summary>
+             </article>
+
+             <br>
+
+        <h1>Request a Book</h1>
+  
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Enter your name">
+                  </div>
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">'@'</div>
+                          </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="email address">
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="form-row">
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Book Title">
+                    </div>
+                  </div>
+
+            </div>
+            <div class="form-row">
+         <div class="col-auto">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                      <label class="form-check-label" for="autoSizingCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </div> 
+                </div>
+            </form>
+</body>
