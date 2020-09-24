@@ -1,13 +1,16 @@
-.header h1,
+
+/*Nav bar*/
 .header .breadcrumb {
    text-align: center;
 }
 
-.book {
-       border-bottom: 1px solid rgb(...);
+/*Nav bar*/
+div .mynav {
+    display: flex;
+    justify-content:space-between ;   
 }
 
-.book .addbtn,
+/*Search Bar*/
 .searchBar input[type=submit] {
 --padding: 8px 10px;
 --border-radius: 5px;
@@ -16,13 +19,20 @@
 --font-size: 1.1em;
 }
 
+/*"+Add to cart" button*/
 .book .addbtn {
   background-color: rgb(79, 149, 255);
+  float: right;
+  position: relative;
 }
 
-div .mynav {
-    display: flex;
-    justify-content:space-between ;
-    
+/*Book details*/
+.book {
+       border-bottom: 1px solid rgb(...);
+       
 }
 
+/*Book request section*/
+.request {
+  text-align: center;
+}

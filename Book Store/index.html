@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="favicon.jpg" rel="icon">
   <link rel="stylesheet" href="style.css">
   <meta name="theme-color" content="#000">
@@ -10,103 +12,171 @@
 </head>
 
 <body>
- <main id="root">
-  <section class="container">
-   <header class="header">
-    <div class="mynav">
-   <h1>My e-Book Library</h1>
-     <nav class="breadcrumb">
-      <a href="/">Home</a> |
-      <a href="/about">About</a> |
-      <a class="bookLink" href="/bookcase">Bookcase (0)</a>
-    </nav>
-     <nav class="login">
-    <button type="button" class="btn btn-primary btn-sm login-button">Log In</button>
-   </nav> 
-     </div>
-    </header>
+  <div id="list-container"></div>
+  <main id="root">
+    <section class="container-fluid">
+      <header class="header">
+        <div class="mynav">
+          <h1>My e-Book Library</h1>
+          <nav class="breadcrumb">
+            <a href="/home">Home</a> |
+            <a href="/about">About</a> |
+            <a class="bookLink" href="/bookcase">Bookcase (0)</a>
+            <nav class="login">
+              <button type="button" class="btn btn-primary btn-sm login-button">Log In</button>
+            </nav>
+          </nav>
 
-    <header class="searchBar">
-     <form>
-      <input type="text" placeholder="Enter… " name="search" value="">
-      <input type="submit" value="Find">
+        </div>
+      </header>
 
-     </form>
-    </header>
+      <header class="searchBar">
+        <form>
+          <input type="text" placeholder="Enter title, author or keyword… " name="search" value="">
+          <input type="submit" value="Find">
 
- <section class="list">
-  <div>
-   <h2>Suggested Reading</h2>
-   <div class="book"><img src="queenie.jpg" alt="Queenie" width="50px" height="50px">
-   <article>
-     <h2 title="Queenie">Queenie</h2>
-      <p class="author">by Candice Carty-Williams</p>
-      <p class="price">£0.99</p>
-      <summary class="description">THE SUNDAY TIMES BESTSELLER SHORTLISTED FOR THE COSTA FIRST NOVEL AWARD LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 'Hilarious, compelling, painful, enlightening, honest. I loved it! - Dolly Alderton 'Brilliant, timely, funny, heartbreaking' - Jojo Moyes 'A deliciously funy, characterful, topical ...</summary>
-    </article>
-    <div class="book"><img src="ghana must go.jpg" alt="Ghana Must Go">
-        <article>
-          <h2 title="Ghana Must Go">Ghana Must Go</h2>
-           <p class="author">by Taiye Selasi</p>
-           <p class="price">£2.99</p>
-           <summary class="description">A stunning novel, spanning generations and continents, Ghana Must Go
-            by rising star Taiye Selasi is a tale of family drama and forgiveness, for fans of Zadie
-            Smith and Chimamanda Ngozi Adichie. This is the story of a family -- of the simple,
-            devastating ways in which families tear themselves apart, ...</summary>
-         </article>
-         <div class="book"><img src="The Girl Who Smiled Beads.jpg" alt="The Girl Who Smiled Beads">
+        </form>
+      </header>
+
+      <section class="list">
+        <div>
+          <h2>Suggested Reading</h2>
+
+          <div class="book">
+            <img src="queenie.jpg" alt="Queenie" width="200px" height="250px">
             <article>
-              <h2 title="Ghana Mu                                                           st Go">The Girl Who Smiled Beads</h2>
-               <p class="author">by Clementine Wamariya</p>
-               <p class="price">£3.99</p>
-               <summary class="description">When Clemantine Wamariya was six years old, her world was torn apart.
+              <div><button class="addbtn">+ Add to Cart</button></div>
+              <h2 title="Queenie">Queenie</h2>
+              <p class="author">Candice Carty-Williams</p>
+              <p class="price">Price: £0.99</p>
+              <summary class="description">THE SUNDAY TIMES BESTSELLER SHORTLISTED FOR THE COSTA FIRST NOVEL AWARD
+                LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 'Hilarious, compelling, painful, enlightening, honest. I
+                loved it! - Dolly Alderton 'Brilliant, timely, funny, heartbreaking' - Jojo Moyes 'A deliciously funy,
+                characterful, topical ...</summary>
+            </article>
+          </div>
+
+          <div class="book">
+            <img src="ghana must go.jpg" alt="Ghana Must Go" width="200px" height="250px">
+            <article>
+              <div><button class="addbtn">+ Add to Cart</button></div>
+              <h2 title="Ghana Must Go">Ghana Must Go</h2>
+              <p class="author">Taiye Selasi</p>
+              <p class="price">Price: £2.99</p>
+              <summary class="description">A stunning novel, spanning generations and continents, Ghana Must Go
+                by rising star Taiye Selasi is a tale of family drama and forgiveness, for fans of Zadie
+                Smith and Chimamanda Ngozi Adichie. This is the story of a family -- of the simple,
+                devastating ways in which families tear themselves apart, ...</summary>
+            </article>
+          </div>
+
+          <div class="book">
+            <img src="The Girl Who Smiled Beads.jpg" alt="The Girl Who Smiled Beads" width="200px" height="250px">
+            <article>
+              <div><button class="addbtn">+ Add to Cart</button></div>
+              <h2 title="The Girl Who Smiled Beads">The Girl Who Smiled Beads</h2>
+              <p class="author">Clementine Wamariya</p>
+              <p class="price">Price: £3.99</p>
+              <summary class="description">When Clemantine Wamariya was six years old, her world was torn apart.
                 She didn't know why her parents began talking in whispers, or why her neighbours started
                 disappearing, or why she could hear distant thunder even when the skies were clear. As
                 the Rwandan civil war raged, Clemantine and her sister...</summary>
-             </article>
+            </article>
+          </div>
 
-             <br>
+          <div class="book">
+            <img src="Americanah.jpg" alt="Americanah" width="200px" height="250px">
+            <article>
+              <div><button class="addbtn">+ Add to Cart</button></div>
+              <h2 title="Americanah">Americanah</h2>
+              <p class="author">Chimamanda Ngozi Adichie</p>
+              <p class="price">Price: £3.49</p>
+              <summary class="description">SHORTLISTED FOR THE BAILEY’S WOMEN’S PRIZE FOR FICTION ‘A delicious,
+                important novel’ The Times ‘Alert, alive and gripping’ Independent ‘Some novels tell a
+                great story and others make you change the way you look at the world. Americanah does
+                both.’ Guardian...</summary>
+            </article>
+          </div>
 
-        <h1>Request a Book</h1>
-  
-        <form>
-            <div class="form-row align-items-center">
+          <div class="book">
+            <img src="what we lose.jpg" alt="What We Lose" width="200px" height="250px">
+            <article>
+              <div><button class="addbtn">+ Add to Cart</button></div>
+              <h2 title="What We Lose">What We Lose</h2>
+              <p class="author">Zinzi Clemmons</p>
+              <p class="price">Price: £2.99</p>
+              <summary class="description">A short, intense and profoundly moving novel about race,
+                identity, family, sex, country, and death – from one of the National Book Foundation’s 5 Under 35: an
+                author of rare, haunting power this is a stunning debut about a young African-American woman coming of
+                age. Raised
+                in Pennsylvania, Thandi views the world of her mother’s childhood in Johannesburg as both impossibly
+                distant and ever present. She is an outsider wherever she goes, caught between being black and white...
+              </summary>
+            </article>
+          </div>
+
+          <div class="book">
+            <img src="the good lord bird.jpg" alt="The Good Lord Bird" width="200px" height="250px">
+            <article>
+              <div><button class="addbtn">+ Add to Cart</button></div>
+              <h2 title="The Good Lord Bird">The Good Lord Bird</h2>
+              <p class="author">James McBride</p>
+              <p class="price">Price: £8.38</p>
+              <summary class="description">Soon to be a Showtime limited series starring Ethan Hawke Winner of
+                the National Book Award for Fiction A Washington Post, Publishers Weekly, Oprah Magazine
+                Top 10 Book of the Year From the bestselling author of The Color of Water, Song Yet
+                Sung, Five-Carat Soul, and Kill 'Em and Leave, a James Brow...</summary>
+            </article>
+          </div>
+
+
+          <br>
+
+          <div class="request">
+            <h1>Request a Book</h1>
+
+            <form>
+              <div class="form-row align-items-center">
                 <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInput">Name</label>
-                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Enter your name">
-                  </div>
-                  <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">'@'</div>
-                          </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="email address">
-                    </div>
-                  </div>
-                  
-            </div>
-            <div class="form-row">
-                <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                    <div class="input-group mb-2">
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Book Title">
-                    </div>
-                  </div>
-
-            </div>
-            <div class="form-row">
-         <div class="col-auto">
-                    <div class="form-check mb-2">
-                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                      <label class="form-check-label" for="autoSizingCheck">
-                        Remember me
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                  </div> 
+                  <label class="sr-only" for="inlineFormInput">Name</label>
+                  <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Enter your name">
                 </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">'@'</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="email address">
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-row">
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                  <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Book Title">
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-row">
+                <div class="col-auto">
+                  <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </div>
+              </div>
             </form>
+          </div>
+          <script type="module" src="index.js"></script>
 </body>
+
+</html>
